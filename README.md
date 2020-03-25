@@ -4,7 +4,7 @@
 
 # Introduction
 Quake 2 is a first-person-shooter from idSoftware. It was removed from the repositories in Ubuntu 9.04 (Jaunty Jackalope). Instructions to install Quake 2 and popular Quake 2 mods.
-
+>https://ubuntu.pkgs.org/18.04/ubuntu-multiverse-amd64/quake2-server_58_all.deb.html
   - Installation (CD-ROM)
   - Data Files
   
