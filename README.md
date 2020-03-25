@@ -1,6 +1,6 @@
 # Quake II
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://images.launchbox-app.com/4895c11d-4620-4a7c-9268-529701afad41.jpg)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
