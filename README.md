@@ -175,9 +175,10 @@ map q2dm1
 
 ### Here's an insecure startscript (for testing / debugging purposes if problems occur only!) that launches a normal (non-r1q2) q2 server:
 
-// ********************** START OF INSECURE SHELLSCRIPT TO START THE SERVER **********************
+
 // FILENAME : /home/quake2/start-airrocket-insecure-testq2-server.sh
 ```sh
+// ********************** START OF INSECURE SHELLSCRIPT TO START THE SERVER **********************
 >#!/bin/sh
 ip="CHANGEME"
 port="27911"
@@ -186,12 +187,14 @@ q2dir="/home/quake2/quake2/"
 echo WARNING: running insecure q2 server $name on $ip : $port
 cd $q2dir
 >screen -A -m -d -S $name ./quake2 +set dedicated 1 +set ip $ip +set port $port +exec q2srv.cfg +set deathmatch 1 +map q2dm1 &
-```
 // ********************** END OF INSECURE SHELLSCRIPT TO START THE SERVER **********************
+```
+
  Here's the final script we'll use that launches the r1q2 server:
-// ********************** START OF SHELLSCRIPT TO START THE R1Q2 SERVER **********************
+
 // FILENAME : /home/quake2/start-airrocket-r1q2-server.sh
 ```sh
+// ********************** START OF SHELLSCRIPT TO START THE R1Q2 SERVER **********************
 >#!/bin/sh
 ip="CHANGEME"
 port="27910"
@@ -200,7 +203,8 @@ q2dir="/home/quake2/quake2/"
 echo running server $name on $ip : $port
 cd $q2dir
 screen -A -m -d -S $name ./r1q2ded-old +set dedicated 1 +set ip $ip +set port $port +exec q2srv.cfg +exec r1q2srv.cfg +map q2dm1 &
-```
 // ********************** END OF SHELLSCRIPT TO START THE R1Q2 SERVER **********************
+```
+
  
 ### GOOD GAME 
