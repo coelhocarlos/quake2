@@ -33,7 +33,7 @@ Quake 2 is a first-person-shooter from idSoftware. It was removed from the repos
  Create the server config and maprotation file
  A very basic server.cfg comes with Quake II, it should look similar to this one (note that I renamed it to q2srv.cfg here):
 
-> FILENAME : /home/quake2/quake2/baseq2/q2srv.cfg
+> FILENAME : /<path to install>/quake2/baseq2/q2srv.cfg
 
 ```sh
 //******************* START OF Q2 SERVER FILE *****************
@@ -64,7 +64,7 @@ Use the r1q2 config generator to generate one, it should look similar to this on
 >
 
 
-> FILENAME : /home/quake2/quake2/baseq2/r1q2srv.cfg
+> FILENAME : /<path to install>/quake2/baseq2/r1q2srv.cfg
 ```sh
 // ********************** START OF R1Q2 SERVER FILE *********************
 >set sv_restartmap "q2dm1"
@@ -146,14 +146,14 @@ map q2dm1
 ### Here's an insecure startscript (for testing / debugging purposes if problems occur only!) that launches a normal (non-r1q2) q2 server:
 
 
-> FILENAME : /home/quake2/start-airrocket-insecure-testq2-server.sh
+> FILENAME : /<path to install>/quake2/start-airrocket-insecure-testq2-server.sh
 ```sh
 // ********************** START OF INSECURE SHELLSCRIPT TO START THE SERVER **********************
 >#!/bin/sh
 ip="CHANGEME"
 port="27911"
 name="q2insecure"
-q2dir="/home/quake2/quake2/"
+q2dir="/<path to install>/quake2/"
 echo WARNING: running insecure q2 server $name on $ip : $port
 cd $q2dir
 >screen -A -m -d -S $name ./quake2 +set dedicated 1 +set ip $ip +set port $port +exec q2srv.cfg +set deathmatch 1 +map q2dm1 &
@@ -162,14 +162,14 @@ cd $q2dir
 
  Here's the final script we'll use that launches the r1q2 server:
 
-> FILENAME : /home/quake2/start-airrocket-r1q2-server.sh
+> FILENAME : /<path to install>/quake2/start-airrocket-r1q2-server.sh
 ```sh
 // ********************** START OF SHELLSCRIPT TO START THE R1Q2 SERVER **********************
 >#!/bin/sh
 ip="CHANGEME"
 port="27910"
 name="r1q2"
-q2dir="/home/quake2/quake2/"
+q2dir="/<path to install>/quake2/"
 echo running server $name on $ip : $port
 cd $q2dir
 screen -A -m -d -S $name ./r1q2ded-old +set dedicated 1 +set ip $ip +set port $port +exec q2srv.cfg +exec r1q2srv.cfg +map q2dm1 &
