@@ -64,7 +64,7 @@ $ add "echo 'quake2 0 0 direct' > /proc/asound/card0/pcm0p/oss" above : exit 0
  A very basic server.cfg comes with Quake II, it should look similar to this one (note that I renamed it to q2srv.cfg here):
   ********************** START OF Q2 SERVER FILE **********************
 // FILENAME : /home/quake2/quake2/baseq2/q2srv.cfg
-
+```sh
 >set hostname "CHANGEME"
 set ServerAdmin "CHANGEME"
 set email "CHANGEME"
@@ -83,7 +83,7 @@ set public "1"
 set setmaster "q2master.planetquake.com master0.gamespy.com satan.idsoftware.com"
 set mapqueue "maps.lst"
 map q2dm1
-
+```
 // ********************** END OF Q2 SERVER FILE **********************
 
 You'll also need a more advanced r1q2 config file.
@@ -92,7 +92,7 @@ Use the r1q2 config generator to generate one, it should look similar to this on
 
 // ********************** START OF R1Q2 SERVER FILE **********************
 // FILENAME : /home/quake2/quake2/baseq2/r1q2srv.cfg
-
+```sh
 >set sv_restartmap "q2dm1"
 set sv_filter_userinfo "1"
 set sv_filter_stringcmds "1"
@@ -156,7 +156,7 @@ set sv_anticheat_show_violation_reason "1"
 set sv_anticheat_client_disconnect_action "0"
 set sv_anticheat_disable_play "0"
 map q2dm1
-
+```
 // ********************** END OF R1Q2 SERVER FILE **********************
  
  ### Create a shellscript to start the server
