@@ -62,8 +62,9 @@ $ add "echo 'quake2 0 0 direct' > /proc/asound/card0/pcm0p/oss" above : exit 0
  ### Config Script 
  Create the server config and maprotation file
  A very basic server.cfg comes with Quake II, it should look similar to this one (note that I renamed it to q2srv.cfg here):
-  ********************** START OF Q2 SERVER FILE **********************
-// FILENAME : /home/quake2/quake2/baseq2/q2srv.cfg
+******************* START OF Q2 SERVER FILE *****************
+> FILENAME : /home/quake2/quake2/baseq2/q2srv.cfg
+
 ```sh
 >set hostname "CHANGEME"
 set ServerAdmin "CHANGEME"
@@ -90,8 +91,8 @@ You'll also need a more advanced r1q2 config file.
 Use the r1q2 config generator to generate one, it should look similar to this one (WARNING: adapt the passwords if you copy the example file given here!) :
 >
 
-// ********************** START OF R1Q2 SERVER FILE **********************
-// FILENAME : /home/quake2/quake2/baseq2/r1q2srv.cfg
+// ********************** START OF R1Q2 SERVER FILE *********************
+> FILENAME : /home/quake2/quake2/baseq2/r1q2srv.cfg
 ```sh
 >set sv_restartmap "q2dm1"
 set sv_filter_userinfo "1"
