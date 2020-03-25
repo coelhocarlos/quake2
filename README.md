@@ -176,7 +176,7 @@ map q2dm1
 ### Here's an insecure startscript (for testing / debugging purposes if problems occur only!) that launches a normal (non-r1q2) q2 server:
 
 
-// FILENAME : /home/quake2/start-airrocket-insecure-testq2-server.sh
+> FILENAME : /home/quake2/start-airrocket-insecure-testq2-server.sh
 ```sh
 // ********************** START OF INSECURE SHELLSCRIPT TO START THE SERVER **********************
 >#!/bin/sh
@@ -192,7 +192,7 @@ cd $q2dir
 
  Here's the final script we'll use that launches the r1q2 server:
 
-// FILENAME : /home/quake2/start-airrocket-r1q2-server.sh
+> FILENAME : /home/quake2/start-airrocket-r1q2-server.sh
 ```sh
 // ********************** START OF SHELLSCRIPT TO START THE R1Q2 SERVER **********************
 >#!/bin/sh
